@@ -1,0 +1,73 @@
+#include <iostream>
+#include <string>
+
+#define IGV 0.18;
+
+using namespace std;
+
+//alcance es global
+int peso;
+
+int main() {
+  std::cout << "Hola a todos, bienvenidos al curso, include,main, std \n\n";
+  cout << "Hola\n\n";
+
+  //Esto es un comentario de una linea
+  /*Esto es un comentario
+     de mas de una linea
+     ya ven???*/
+
+  //esto no es un comentario
+
+  // creando variables y asignando valores a la variables
+  string name="Ricardo";
+  
+  // edad es una constante
+  int edad = 19;
+
+  //incrementar el valor de una variable
+  edad = edad +1;
+  ++edad ;
+  edad += 1;
+  edad += 10;
+  
+  edad = 20;
+  string mensaje;
+  mensaje = "Hola, " + name + " tienes " + to_string(edad) + " años.";
+
+  cout << mensaje;
+
+  const double pi = 3.141516;
+  //pi = 4.151612;
+
+  double precioVenta = 1000;
+  double precioTotal = precioVenta * IGV;
+
+  double pTotal = precioVenta + precioTotal;
+  cout << "El precio de venta total es: " + to_string(pTotal);
+
+
+  //casting
+  double num1, num3 = 3.12;
+  int num2 = 10, num4;
+
+  // de double a int
+  num1 = (double)num2;
+  // de int a double
+  num4 = (int)num3;
+
+  bool verdad;
+  verdad = (10>2) || (4>8);
+
+  cout << "\n\n";
+  cout << verdad;
+
+  string texto;
+  cout << "Ingresa un texto: ";
+  //para recibir el texto
+  cin >> texto;
+
+  cout << "El texto es: " + texto;
+  
+  
+}
