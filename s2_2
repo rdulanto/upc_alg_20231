@@ -7,7 +7,7 @@ int main() {
   //Ejercicio 1
   /*
     Escriba un programa en C++ que permita solicitar un número entero y mostrar el valor, el doble del valor y el triple del valor.
-*/
+
   //declarando la variable
   int numero;
   //capturar el numero
@@ -17,5 +17,32 @@ int main() {
   cout << "\nEl valor es: " + to_string(numero);
   cout << "\nEl doble es: " + to_string(numero*2);
   cout << "\nEl triple es: " + to_string(numero*3);
-  
+
+*/
+
+  /*
+Ejercicio 2
+  Escriba un programa en C++ que permita ingresar 2 números enteros y mostrar, la suma, resta, multiplicación, división y módulo de los números ingresados.
+
+  */
+
+  int num1, num2;
+  cout << "Ingrese un primer numero\n";
+  cin >> num1;
+  cout << "\nIngrese un segundo numero\n";
+  cin >> num2;
+
+  cout<< "\nResultado\n";
+  cout<<"La suma es: " << to_string(num1 + num2) << "\n";
+
+  cout<<"La resta es: " << to_string(num1 - num2) << "\n";
+
+  cout<<"La multiplicación es: " << to_string(num1 * num2) << "\n";
+
+  cout<<"La división es: " << to_string(num1 / num2) << "\n";
+
+  cout<<"El modulo es: " << to_string(num1 % num2) << "\n";
+
+
+
 }
